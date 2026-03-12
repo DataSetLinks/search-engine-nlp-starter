@@ -60,8 +60,7 @@ export default function SearchPage() {
   const renderVirtualRow = (virtualRow: any) => (
     <TableRow key={virtualRow.index}>
       {columns.map((column, colIdx) => {
-        const cellValue = results[virtualRow.index]?.[column] || "";
-
+        const cellValue = String(results[virtualRow.index]?.[column] || "");
         const className = clsx("min-w-[200px] ", {
           "break-word": cellValue.includes(" "),
           "break-all": !cellValue.includes(" ") || cellValue.startsWith("http"),

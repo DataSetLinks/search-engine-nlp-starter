@@ -26,8 +26,6 @@ For example, for the dataset shown below:
 
 _datalinks/supplychain/tariffs_
 
-Your `.env.local` entry should look like this:
-
 ![DataLinks Dataset Visualization](/public/Datalinks_Dataset.png)
 
 Your `.env.local` entry should look like this:
